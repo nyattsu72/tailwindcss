@@ -2,16 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-img {
-  max-width: 100%;
-  height: auto;
-  border: none;
-  vertical-align: top;
+@layer base {
+  img {
+    @apply max-w-full h-auto border-none align-top;
+  }
 }
 
-a {
-  color: rgb(45, 112, 189);
-  font-size: 1.8rem;
+.card {
+  @apply w-full h-full border rounded-lg flex flex-col items-center p-4;
+}
+
+.card div {
+  @apply w-full;
+}
+
+.btn {
+  @apply rounded-lg bg-green-800 text-white text-white block p-2 text-center hover:opacity-20 hover:duration-300;
 }
 
 .loading {
