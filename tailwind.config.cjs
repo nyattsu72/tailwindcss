@@ -4,10 +4,14 @@ module.exports = {
     './src/**/*.{html,js}', // here
   ],
   theme: {
-    extend: {},
-    screens: {
-      tablet: '750px',
-      pc: '960px',
+    extend: {
+      colors:{
+        baseColor: '#09558c',
+      }
+      screens: {
+        tablet: '750px',
+        pc: '960px',
+      },
     },
   },
   plugins: [],
